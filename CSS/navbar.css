@@ -1,0 +1,116 @@
+:root{
+  --color-1: #f0f0f0;
+  --text-color: #880a0a;
+  --accent-color: #006aff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: Roboto;
+  font-size: 12pt;
+}
+
+nav{
+  height: 60px;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.links-container img{
+  width: 200px;
+}
+
+nav a{
+  font-family: Roboto;
+  font-weight: 700;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav a:hover{
+  background-color: var(--text-color);
+  color: var(--color-1);
+}
+
+.my-icon{
+  font-size: 30px;
+  color: #880a0a;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+  display: none;
+}
+
+#sidebar-active{
+  display: none;
+}
+
+@media (max-width: 600px){
+  .links-container{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+    background-color: var(--color-1);
+    box-shadow: -5px 0 5px rgbs(0, 0, 0, 0.25);
+    transition: 0.6s ease-out;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  nav a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 15px 30px;
+    justify-content: flex-start;
+    
+  }  
+  
+  .open-sidebar-button, .close-sidebar-button{
+    padding: 10px 20px;
+    display: block;
+  }
+
+  
+  #sidebar-active:checked ~ .links-container{
+    right: 0;
+  }
+
+  #sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+}
+
+

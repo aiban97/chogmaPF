@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header-container">
+      <div class="sidebar">
+        <div class="sidebar-x" onclick="hideSidebar()">
+          <a href="#"><i class="bx bx-x x-button"></i></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a class="menu-a" href="index.html">
+              <i class="bx bxs-home"></i>
+              <span class="link-name"> HOME</span>
+            </a>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a class="menu-a" href="">
+                <i class="bx bxs-info-square"></i>
+                <span class="link-name"> ABOUT</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li class="sub-li"><a href="about.html">About Us</a></li>
+              <li class="sub-li"><a href="pastors.html">Our Pastors</a></li>
+              <li class="sub-li"><a href="#">Our Evangelists</a></li>
+              <li class="sub-li"><a href="#">Statistics</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="bx bxs-category"></i>
+                <span class="link-name"> DEPARTMENTS</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li class="sub-li"><a href="pf.html">Pastors' Fellowship</a></li>
+              <li class="sub-li"><a href="ba.html">Business Association</a></li>
+              <li class="sub-li"><a href="#">Mission Board</a></li>
+              <li class="sub-li"><a href="#">Women Department</a></li>
+              <li class="sub-li"><a href="#">Youth Department</a></li>
+              <li class="sub-li"><a href="#">Evangelism Department</a></li>
+              <li class="sub-li">
+                <a href="#">Sunday School & Children Department</a>
+              </li>
+              <li class="sub-li">
+                <a href="#">Child Sponsorship Programme</a>
+              </li>
+              <li class="sub-li"><a href="#">Jingaiei Centre</a></li>
+              <li class="sub-li"><a href="#">Nichols-Roy Bible College</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <i class="bx bxs-photo-album"></i>
+              <span class="link-name"> GALLERY</span>
+            </a>
+          </li>
+          <li>
+            <a href="events.html">
+              <i class="bx bxs-calendar"></i>
+              <span class="link-name"> EVENTS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--BIG SCREEN-->
+      <div class="menu-list">
+        <div class="menu-item logo-item">
+          <a href="index.html"><img src="img/LOGO2.png" alt="" /></a>
+        </div>
+        <div class="menu-item hideOnMobile"><a href="index.html">HOME</a></div>
+        <div class="dropdown">
+          <div class="menu-item hideOnMobile dropbtn">
+            <a href="#">ABOUT</a>
+          </div>
+          <div class="dropdown-content1">
+            <a href="about.html">About Us</a>
+            <a href="pastors.html">Pastor</a>
+            <a href="#">Evangelists</a>
+            <a href="#">Statistics</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="menu-item hideOnMobile dropbtn">
+            <a href="#">DEPARTMENTS</a>
+          </div>
+          <div class="dropdown-content2">
+            <a href="pf.html">Pastors' Fellowship</a>
+            <a href="ba.html">Business Association</a>
+            <a href="#">Mission Board</a>
+            <a href="#">Women Department</a>
+            <a href="#">Youth Department</a>
+            <a href="#">Evangelism Department</a>
+            <a href="#">Sunday School & Children Department</a>
+            <a href="#">Child Sponsorship Programme</a>
+            <a href="#">Jingaiei Centre</a>
+            <a href="#">Nichols-Roy Bible College</a>
+          </div>
+        </div>
+
+        <div class="menu-item hideOnMobile">
+          <a href="gallery.html">GALLERY</a>
+        </div>
+        <div class="menu-item hideOnMobile">
+          <a href="events.html">EVENTS</a>
+        </div>
+        <div class="menu-item button1" onclick="showSidebar()">
+          <a href="#"><i class="bx bx-menu menu-button"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Content-->
+    <div class="content-container">
+      <div class="heading-text">
+        <h1>CHURCH OF GOD</h1>
+        <h3>(MEGHALAYA & ASSAM)</h3>
+        <h4>MOTTO: "HOLINESS, UNITY & SERVICE"</h4>
+        <hr />
+        <h5 class="question">WHERE AND WHEN WAS THE CHURCH ESTABLISHED?</h5>
+        <p class="desc1">
+          Founded in the year 1902 at Mylliem Madaniing Syiem by four Men of
+          God, Rev. Wolley Mohon Roy, Rev. J.J.M Nichols Roy, Bro. Jobin Roy
+          Chyne & Bro. E. Dhorom.
+        </p>
+        <a href="about.html" class="btn1">Read More</a>
+      </div>
+
+      <div class="photo-container">
+        <div class="photo-label">JJM NICHOLS-ROY MEMORIAL BUILDING</div>
+        <img src="img/bg2.png" alt="" />
+      </div>
+    </div>
+
+    <div class="heading-bar">DEPARTMENTS</div>
+    <div class="dept-container">
+      <div class="dept-img-con">
+        <a href="pf.html"><img class="pf-img" src="img/PF.jpg" alt="" /></a>
+      </div>
+      <div class="dept-img-con">
+        <a href="ba.html"><img class="ba-img" src="img/ba.jpg" alt="" /></a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="mb-img" src="img/MB.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="wd-img" src="img/WD.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="yd-img" src="img/YD.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="ed-img" src="img/ED.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="yd-img" src="img/SSCD.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="yd-img" src="img/CSP.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="yd-img" src="img/JC.jpg" alt="" />
+        </a>
+      </div>
+      <div class="dept-img-con">
+        <a href="">
+          <img class="yd-img" src="img/NBC.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div class="heading-bar">PASTORS</div>
+    <div class="pastors-container">
+      <div class="pastor-card">
+        <img src="img/BRS.png" alt="" />
+        <div class="pastor-desc">
+          <p>Rev. Dr. B. R SOHKHIA</p>
+          <p>Retired Pastor</p>
+        </div>
+      </div>
+
+      <div class="pastor-card">
+        <img src="img/OLS.png" alt="" />
+        <div class="pastor-desc">
+          <p>Rev. Dr. O. L SNAITANG</p>
+          <p>Retired Pastor</p>
+        </div>
+      </div>
+
+      <div class="pastor-card">
+        <img src="img/ACM.png" alt="" />
+        <div class="pastor-desc">
+          <p>Rev. Dr. A. C MOORE</p>
+          <p>Retired Pastor</p>
+        </div>
+      </div>
+
+      <div class="pastor-card">
+        <img src="img/BP_POHSNGAP.png" alt="" />
+        <div class="pastor-desc">
+          <p>Rev. B. P POHSNGAP</p>
+          <p>Retired Pastor</p>
+        </div>
+      </div>
+
+      <div class="pastor-card">
+        <img src="img/SD_KMAWPHLANG.png" alt="" />
+        <div class="pastor-desc">
+          <p>Rev. Dr. S. D KHARMAWPHLANG</p>
+          <p>Retired Pastor</p>
+        </div>
+      </div>
+    </div>
+    <div class="more-button">
+      <a href="pastors.html">
+        <button>MORE</button>
+      </a>
+    </div>
+
+    <div class="heading-bar">PHOTOS</div>
+    <div class="gallery-container">
+      <div class="gallery-img-con">
+        <a href=""><img class="pf-img" src="img/pic1.jpg" alt="" /></a>
+      </div>
+      <div class="gallery-img-con">
+        <a href=""><img class="pf-img" src="img/pic2.jpg" alt="" /></a>
+      </div>
+      <div class="gallery-img-con">
+        <a href=""><img class="pf-img" src="img/pic3.jpg" alt="" /></a>
+      </div>
+      <div class="gallery-img-con">
+        <a href=""><img class="pf-img" src="img/pic4.jpg" alt="" /></a>
+      </div>
+    </div>
+
+    <div class="more-button">
+      <a href="gallery.html">
+        <button>MORE</button>
+      </a>
+    </div>
+
+    <div class="heading-bar">STATISTICS</div>
+    <div class="stats-container">
+      <div class="stat">
+        <i class="bx bx-check-square"></i>
+        <h1><span data-count="26">26</span></h1>
+        <h3>DISTRICTS</h3>
+      </div>
+      <div class="stat">
+        <i class="bx bx-check-circle"></i>
+        <h1><span data-count="88">88</span></h1>
+        <h3>CIRCLES</h3>
+      </div>
+      <div class="stat">
+        <i class="bx bxs-church"></i>
+        <h1><span data-count="703">703</span></h1>
+        <h3>LOCAL CHURCHES</h3>
+      </div>
+      <div class="stat">
+        <i class="bx bx-male-female"></i>
+        <h1><span data-count="2">2,00,000</span>+</h1>
+        <h3>POPULATION</h3>
+      </div>
+      <div class="stat">
+        <i class="bx bxs-user"></i>
+        <h1><span data-count="96">96</span></h1>
+        <h3>PASTORS</h3>
+      </div>
+      <div class="stat">
+        <i class="bx bxs-group"></i>
+        <h1><span data-count="71">71</span></h1>
+        <h3>EVANGELISTS</h3>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div class="contact-con">
+      <div class="info-con">
+        <div class="info1">Contact Us:</div>
+        <div class="address">
+          <div class="icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="add">
+            JJM Memorial Building, Mountain View, Chapel Road Qualapatty, Church
+            Of God (M & A) Compound, Shillong &#8212; 793002
+          </div>
+        </div>
+        <div class="phone">
+          <div class="icon">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="number">+91 7654289987</div>
+        </div>
+        <div class="gmail">
+          <div class="icon">
+            <i class="bx bxl-gmail"></i>
+          </div>
+          <div class="gmail-id">pfcogma@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="links-container">
+        <div class="heading-link">Youtube Links:</div>
+        <div class="links-con">
+          <a
+            href="https://youtube.com/@thelightofthegospelmediami775?si=_r0rliTyVbbOiAf1"
+            target="_blank"
+          >
+            <div class="link1">
+              <div class="link-icon"><i class="bi bi-youtube"></i></div>
+              <div class="link-add">TLTG</div>
+            </div>
+          </a>
+          <a
+            href="https://youtube.com/@jingiasengsamlabalangublei9805?si=Am-dQEetBl9anRYd"
+            target="_blank"
+          >
+            <div class="link2">
+              <div class="link-icon"><i class="bi bi-youtube"></i></div>
+              <div class="link-add">JS YA</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer-container">
+      <div class="copyright">
+        &copy; <a class="border-bottom" href="#">pastorsfellowship</a> (PF)
+        2025, All Right Reserved.
+      </div>
+      <div class="developer">
+        Designed By
+        <a
+          class="border-bottom"
+          href="https://www.facebook.com/aky.jyrwa?mibextid=ZbWKwL"
+          >Aibanroi Jyrwa</a
+        >, IT Engg.
+      </div>
+    </div>
+  </body>
+
+  <script src="JS/side_script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>

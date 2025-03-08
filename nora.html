@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/sidebar.css" />
+    <link rel="stylesheet" href="CSS/ba.css" />
+    <link rel="stylesheet" href="CSS/nora.css" />
+    <link rel="stylesheet" href="CSS/table.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header-container">
+      <div class="sidebar">
+        <div class="sidebar-x" onclick="hideSidebar()">
+          <a href="#"><i class="bx bx-x x-button"></i></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a class="menu-a" href="index.html">
+              <i class="bx bxs-home"></i>
+              <span class="link-name"> HOME</span>
+            </a>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a class="menu-a" href="#">
+                <i class="bx bxs-info-square"></i>
+                <span class="link-name"> ABOUT</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li class="sub-li"><a href="#">About Us</a></li>
+              <li class="sub-li"><a href="pastors.html">Our Pastors</a></li>
+              <li class="sub-li"><a href="#">Our Evangelists</a></li>
+              <li class="sub-li"><a href="#">Statistics</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="bx bxs-category"></i>
+                <span class="link-name"> DEPARTMENTS</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li class="sub-li"><a href="pf.html">Pastors' Fellowship</a></li>
+              <li class="sub-li"><a href="ba.html">Business Association</a></li>
+              <li class="sub-li"><a href="#">Mission Board</a></li>
+              <li class="sub-li"><a href="#">Women Department</a></li>
+              <li class="sub-li"><a href="#">Youth Department</a></li>
+              <li class="sub-li"><a href="#">Evangelism Department</a></li>
+              <li class="sub-li">
+                <a href="#">Sunday School & Children Department</a>
+              </li>
+              <li class="sub-li">
+                <a href="#">Child Sponsorship Programme</a>
+              </li>
+              <li class="sub-li"><a href="#">Jingaiei Centre</a></li>
+              <li class="sub-li"><a href="#">Nichols-Roy Bible College</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-photo-album"></i>
+              <span class="link-name"> GALLERY</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--BIG SCREEN-->
+      <div class="menu-list">
+        <div class="menu-item logo-item">
+          <a href="index.html"><img src="img/ba_logo.png" alt="" /></a>
+        </div>
+        <div class="menu-item hideOnMobile"><a href="index.html">HOME</a></div>
+        <div class="dropdown">
+          <div class="menu-item hideOnMobile dropbtn">
+            <a href="#">ABOUT</a>
+          </div>
+          <div class="dropdown-content1">
+            <a href="#">About Us</a>
+            <a href="pastors.html">Pastor</a>
+            <a href="#">Evangelists</a>
+            <a href="#">Statistics</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="menu-item hideOnMobile dropbtn">
+            <a href="#">DEPARTMENTS</a>
+          </div>
+          <div class="dropdown-content2">
+            <a href="pf.html">Pastors' Fellowship</a>
+            <a href="ba.html">Business Association</a>
+            <a href="#">Mission Board</a>
+            <a href="#">Women Department</a>
+            <a href="#">Youth Department</a>
+            <a href="#">Evangelism Department</a>
+            <a href="#">Sunday School & Children Department</a>
+            <a href="#">Child Sponsorship Programme</a>
+            <a href="#">Jingaiei Centre</a>
+            <a href="#">Nichols-Roy Bible College</a>
+          </div>
+        </div>
+
+        <div class="menu-item hideOnMobile"><a href="#">GALLERY</a></div>
+        <div class="menu-item hideOnMobile"><a href="#">STATISTICS</a></div>
+        <div class="menu-item button1" onclick="showSidebar()">
+          <a href="#"><i class="bx bx-menu menu-button"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ba-heading-bar">NORA EVALYN HIGHER SECONDARY SCHOOL</div>
+    <!--Content-->
+    <div class="content-container">
+      <div class="heading-text">
+        <h1>A BRIEF HISTORY ABOUT THE SCHOOL</h1>
+        <hr />
+        <p class="desc1">
+          The establishment of the Nora Evalyn Higher Secondary School (English
+          Medium) under the auspices of the Business Association of the Church
+          Of God (Meghalaya & Assam), was in sweet and loving memory of (L) Mrs.
+          N.E. Nichols-Roy, wife of (L) Rev. J.J.M. Nichols-Roy who rendered her
+          life for the sake of the proclamation of the Gospel of the Lord Jesus
+          Christ through the Church Of God in the Khasi & Jaintia Hills founded
+          in 1992.
+        </p>
+      </div>
+
+      <div class="photo-container">
+        <div class="photo-label">NORA EVALYN HIGHER SECONDARY SCHOOL</div>
+        <img src="img/nora1.JPG" alt="" />
+      </div>
+    </div>
+
+    <div class="ba-heading-bar">AIMS & OBJECTIVES OF THE SCHOOL</div>
+    <div class="nora-content-con">
+      <div class="nora-dept-lists">
+        <ul>
+          <li>
+            <i class="bx bxs-label"></i> To educate the young pupils in all
+            spheres of life so as to make them worthy, god fearing and
+            discipline citizens of the country.
+          </li>
+          <li>
+            <i class="bx bxs-label"></i>To cultivate in the mind of the young
+            pupils the attitude of good will, sincerity and sense of hard work.
+            To instill in them confidence and ability to achieve, to develop
+            obedience to teachers and elders and to attain all desired
+            attributes of good citizenship in the society and towards the
+            country as a whole.
+          </li>
+          <li>
+            <i class="bx bxs-label"></i> To provide opportunities for the
+            students to use their talents and gifts.
+          </li>
+          <li>
+            <i class="bx bxs-label"></i> To uplift the intellectual, social and
+            physical needs of all students
+          </li>
+          <li>
+            <i class="bx bxs-label"></i> To bring the school and community
+            closer to each other.
+          </li>
+          <li><i class="bx bxs-label"></i> To provide good moral education.</li>
+          <li>
+            <i class="bx bxs-label"></i> To impart social and spiritual values
+            and good ideals to the students.
+          </li>
+          <li>
+            <i class="bx bxs-label"></i> To provide technical and Higher
+            Education to all the pupils.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ba-heading-bar">TEACHING & NON-TEACHING STAFFS</div>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>SL NO</th>
+          <th>STAFF NAME</th>
+          <th>DESIGNATION</th>
+          <th>QUALIFICATION</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ms. Beautilet Warjri</td>
+          <td>Principal</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mr. Wilfred Kharkongor</td>
+          <td>Vice Principal</td>
+          <td>B. Sc, M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ms. Karalin Diengdoh</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mr. Micheal Ryntathiang</td>
+          <td>Teaching Staff</td>
+          <td>B.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Mrs. Wandahunshisha War Nongbri</td>
+          <td>Teaching Staff</td>
+          <td>B.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Mrs. Deikresha Marbaniang</td>
+          <td>Teaching Staff</td>
+          <td>B.A, D.El.Ed</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Mrs. Bakorshisha Lyngdoh</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Mrs. Ibakordor Marbaniang</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Mrs. Midarisha Lyngdoh</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Ms. Zelma Amy Swer</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Mr. Tipland Khongmen</td>
+          <td>Teaching Staff</td>
+          <td>M.A</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Mrs. Devora Basaiawmoit</td>
+          <td>Teaching Staff</td>
+          <td>B.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Ms. Balarisuk Kharchandy</td>
+          <td>Teaching Staff</td>
+          <td>B.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Ms. Badaplin Kharbhih</td>
+          <td>Teaching Staff</td>
+          <td>B.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td data-cell="SL NO">15</td>
+          <td data-cell="NAME">Mrs. Balarisuk Kharchandy</td>
+          <td data-cell="DESIGNATION">Teaching Staff</td>
+          <td data-cell="QUALIFICATION">B.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td data-cell="SL NO">16</td>
+          <td data-cell="NAME">Mrs. Mellidora Warjri</td>
+          <td data-cell="DESIGNATION">Teaching Staff</td>
+          <td data-cell="QUALIFICATION">B.A, D.El.Ed</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Mrs. Daiamonlang Sohkhiar</td>
+          <td>Teaching Staff</td>
+          <td>B.A, D.El.Ed</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Ms.Jessica Kharkongor</td>
+          <td>Teaching Staff</td>
+          <td>M.Sc. B.Ed</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Mrs.Apphidalin Slong</td>
+          <td>Teaching Staff</td>
+          <td>B.A</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Ms. Pandora Rynjah</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Ms. Merynisha Kharchandy</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Ms. Marvellous Majaw</td>
+          <td>Teaching Staff</td>
+          <td>M.A, B.Ed</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Ms. Aphia Kharkongor</td>
+          <td>Librarian</td>
+          <td>B.A</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>Mr. B. Nongrum</td>
+          <td>Office Staff</td>
+          <td>B.COM</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Mr. B. Diengdoh</td>
+          <td>Office Staff</td>
+          <td>XII</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Ms. Esther Sumer</td>
+          <td>Helper & Cleaner</td>
+          <td>VIII</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Ms. Hasha Suting</td>
+          <td>AIA</td>
+          <td>VIII</td>
+        </tr>
+      </table>
+    </div>
+    <!--Footer-->
+    <div class="footer-container">
+      <div class="copyright">
+        &copy; <a class="border-bottom" href="#">pastorsfellowship</a> (PF)
+        2025, All Right Reserved.
+      </div>
+      <div class="developer">
+        Designed By
+        <a
+          class="border-bottom"
+          href="https://www.facebook.com/aky.jyrwa?mibextid=ZbWKwL"
+          >Aibanroi Jyrwa</a
+        >, IT Engg.
+      </div>
+    </div>
+  </body>
+  <script src="JS/side_script.js"></script>
+</html>

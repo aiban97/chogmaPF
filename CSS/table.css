@@ -1,0 +1,73 @@
+table{
+  font-family: Roboto;
+  width: 100%;
+  background-color: hsl(1, 62%, 37%);
+  color: white;
+  padding: 1rem;
+  border-collapse: collapse;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+th, td{
+  padding: 1rem;
+}
+
+th{
+  font-size: 1.2rem;
+  text-align: left;
+  background-color: hsla(1 89% 28%);
+}
+
+th:nth-of-type(1){
+  border-radius: 10px 0 0 0;
+}
+
+th:nth-of-type(4){
+  border-radius: 0 10px 0 0;
+}
+
+tr:nth-of-type(2n){
+  background-color: hsla(1 89% 28% / 0.4);
+}
+
+@media(max-width: 650px){
+  th{
+    display: none;
+  }
+
+  td{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 15ch auto;
+    padding: 0.75rem 1rem;
+  }
+
+  td:first-child{
+    padding-top: 1.5rem;
+  }
+
+  td:last-child{
+    padding-bottom: 1.5rem;
+  }
+  
+  td::before{
+    font-weight: 700;
+  }
+
+  td:nth-of-type(1)::before{
+    content: "Sl No:";
+  }
+
+  td:nth-of-type(2)::before{
+    content: "Staff Name: "
+  }
+
+  td:nth-of-type(3)::before {
+    content: "Designation: "
+  }
+
+  td:nth-of-type(4)::before{
+    content: "Qualifications:"
+  }
+}
